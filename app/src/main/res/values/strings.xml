@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Ngo</string>
+    <string name="text1">DONATING IS BEST HUMANITY</string>
+    <string name="text2">To Make The Better World</string>
+    <string name="but1">Start</string>
+
+    <!--Titles-->
+    <string name="first_slide_title">Donate Online</string>
+    <string name="second_slide_title">Platform for NGO and User to participate</string>
+    <string name="third_slide_title">Become A Volunteer</string>
+    <string name="fourth_slide_title">Make Unity for children</string>
+
+    <!--Descriptions-->
+    <string name="first_slide_desc">Your donation will further our vision of ensuring a happy and healthy childhood for India’s children. Donate to make a change.</string>
+    <string name="second_slide_desc">The Platform promotes participation in the field of Social Action and generate social change.</string>
+    <string name="third_slide_desc">Find opportunities that match your volunteer interests, from location to type of work.</string>
+    <string name="fourth_slide_desc">The Platform provides to help other , make unity for helping underprivileged children</string>
+
+    <!--Buttons-->
+    <string name="skip_btn">Skip</string>
+    <string name="next_btn">Next</string>
+    <string name="let_get_started">Lets Get Started</string>
+    <string name="go">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="backimg">backlogin</string>
+    <string name="signin">Sign In to continue</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone No</string>
+    <string name="cpass">Confirm Password</string>
+    <string name="pass">Password</string>
+    <string name="forgot">Forgot Password </string>
+    <string name="signup">Signup to start your donation</string>
+    <string name="newuser">New User? SIGN UP</string>
+    <string name="loginuser">Login</string>
+    <string name="alreadyuser">Already account ? Login</string>
+    <string name="forgotemail">SEND OTP</string>
+    <string name="forgotemailpass">SEND EMAIL</string>
+    <string name="password_update">PASSWORD UPDATE</string>
+    <string name="Otp_sucess">OTP VERIFICATION DONE</string>
+    <string name="pass_update">Your Password has been update</string>
+    <string name="forgot_update_title">NEW CREDENTIALS</string>
+    <string name="forgot_update_desc">Set your new password</string>
+    <string name="otp_text">Now you can donate !!</string>
+    <string name="forgotreset">Reset your password for donation</string>
+    <string name="forgotuser">forgotUser</string>
+    <string name="updateuser">UPDATE</string>
+    <string name="forgotpass">Forgot Password</string>
+    <string name="remember">Remember Me</string>
+
+
+    <string name="home">Home</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="reg">Register</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+    <string name="chat">Chat</string>
+    <string name="addpost">Add Post</string>
+    <string name="donate">Donate</string>
+    <string name="notify">Notification</string>
+    <string name="location">Track Location</string>
+
+    <string name="ngo">CHARITY IS PRIORITY</string>
+    <string name="join">Join Us </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="verify">VERIFICATION</string>
+    <string name="otp_description_text">We have sent you OTP on phone  </string>
+    <string name="otp_verification_text">OTP VERIFICATION</string>
+    <string name="otp_code_text">Co\nde</string>
+    <string name="title_activity_google_maps">Map</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_pop_up">PopUp</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+
+
+</resources>

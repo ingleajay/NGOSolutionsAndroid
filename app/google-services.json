@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "720815121141",
+    "firebase_url": "https://ngo-platform.firebaseio.com",
+    "project_id": "ngo-platform",
+    "storage_bucket": "ngo-platform.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720815121141:android:a11bcf44a80bebe7541bbc",
+        "android_client_info": {
+          "package_name": "com.example.ngosolutions"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "720815121141-11fh5m48c86f7bk5h4un6egrlobn6nh7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJtSaalBS8JetVCZj3jH-9lpOPlk6R4rk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "720815121141-11fh5m48c86f7bk5h4un6egrlobn6nh7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

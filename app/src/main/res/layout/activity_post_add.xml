@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".AddPost.PostAdd">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:id="@+id/pass_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="16dp"
+            android:padding="5dp"
+            android:src="@drawable/icon_back"
+            />
+
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="60dp"
+            android:text="Add Post"
+            android:textSize="26dp"
+            android:textColor="@color/colorAccent"
+            android:layout_centerVertical="true"
+            android:id="@+id/set_text"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="60dp"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:cardBackgroundColor="@color/colorAccent"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="6dp"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="3dp">
+               <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/pTitleEt"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:hint="Enter Title"
+                        android:textColorHint="@color/black"
+                        app:boxStrokeColor="@color/colorPrimary"
+                        app:boxStrokeWidthFocused="2dp"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/colorPrimary"
+                        app:hintTextColor="@color/colorPrimary"
+                        app:startIconDrawable="@drawable/edit_title">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:textCursorDrawable="@null" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ImageView
+                        android:id="@+id/pImageTv"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content"
+                        android:background="#f5f5f0"
+                        android:minHeight="200dp" />
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/pDescriptionEt"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:hint="Enter Description"
+                        android:textColorHint="@color/black"
+                        app:boxStrokeColor="@color/colorPrimary"
+                        app:boxStrokeWidthFocused="2dp"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/colorPrimary"
+                        app:hintTextColor="@color/colorPrimary"
+                        app:startIconDrawable="@drawable/edit_title">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:textCursorDrawable="@null" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/upload"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pDescriptionEt"
+                        android:layout_gravity="end"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:elevation="0dp"
+                        android:text="UPLOAD"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+                </LinearLayout>
+               </ScrollView>
+            </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</RelativeLayout>

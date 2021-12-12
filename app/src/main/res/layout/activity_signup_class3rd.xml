@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/regback"
+    android:padding="30dp"
+    tools:context=".LoginActivity.SignupClass3rd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/logo_image1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ngosol"
+                android:transitionName="transition_reg_image" />
+
+
+            <TextView
+                android:id="@+id/slogan_name"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_below="@+id/logo_image1"
+                android:gravity="center_horizontal"
+                android:text="@string/signup"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:transitionName="transition_reg_text" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/country_code_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/purple_border"
+                app:ccp_autoDetectCountry="true"
+                app:ccp_showFlag="true"
+                app:ccp_showFullName="true"
+                app:ccp_showNameCode="true" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_phone_number"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/country_code_picker"
+                android:hint="@string/phone"
+                android:layout_marginTop="3dp"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconTint="@color/colorPrimary"
+                app:hintTextColor="@color/colorPrimary"
+                app:startIconDrawable="@drawable/phone_icon"
+                app:startIconTint="@color/colorPrimary">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="phone"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@null" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/next_reg"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/next_btn"
+            android:onClick="RegisterUser"
+            android:textColor="@color/colorAccent"
+            android:transitionName="transition_next_btn"
+            />
+
+        <Button
+            android:id="@+id/login_screen"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="309dp"
+            android:layout_height="33dp"
+            android:background="@color/colorAccent"
+            android:elevation="0dp"
+            android:text="@string/alreadyuser"
+            android:textColor="#220101"
+            android:textSize="12sp"
+            android:transitionName="transition_loguser_btn" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/top_bottom"
+    android:padding="30dp"
+    android:transitionName="transition_login"
+    tools:context=".MainLogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/logo_image1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ngosol"
+                android:transitionName="transition_reg_image" />
+
+
+            <TextView
+                android:id="@+id/slogan_name"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_below="@+id/logo_image1"
+                android:gravity="center_horizontal"
+                android:text="@string/signup"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:transitionName="transition_reg_text" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/login_country_code_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/purple_border"
+                app:ccp_autoDetectCountry="true"
+                app:ccp_showFlag="true"
+                app:ccp_showFullName="true"
+                app:ccp_showNameCode="true" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/login_phone_number"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/country_code_picker"
+                android:hint="@string/phone"
+                android:layout_marginTop="3dp"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/colorAccent"
+                app:boxStrokeWidthFocused="2dp"
+                app:hintTextColor="@color/colorAccent"
+                app:startIconDrawable="@drawable/phone_icon"
+                >
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/phoneNumberEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="phone"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@null" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="@string/pass"
+                app:startIconDrawable="@drawable/login_icon"
+                app:boxBackgroundMode="outline"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/colorAccent"
+                app:boxStrokeWidthFocused="2dp"
+                app:passwordToggleEnabled="true"
+                app:hintTextColor="@color/colorAccent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@null"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <RelativeLayout
+                android:id="@+id/forget_password_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:id="@+id/forgot_screen"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:elevation="0dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/forgot"
+                    android:textColor="#220101" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/login"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:backgroundTint="@color/colorAccent"
+            android:onClick="LoginUser"
+            android:text="@string/go"
+            android:textColor="@color/colorPrimary"
+
+             />
+
+        <Button
+            android:id="@+id/signup_screen"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="309dp"
+            android:layout_height="33dp"
+            android:background="@color/colorAccent"
+            android:elevation="0dp"
+            android:text="@string/newuser"
+            android:textColor="#220101"
+            android:textSize="12sp"
+             />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

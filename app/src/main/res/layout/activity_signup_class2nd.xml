@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/regback"
+    android:padding="30dp"
+    tools:context=".LoginActivity.SignupClass2nd">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/logo_image1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ngosol"
+                android:transitionName="transition_reg_image" />
+
+
+            <TextView
+                android:id="@+id/slogan_name"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_below="@+id/logo_image1"
+                android:gravity="center_horizontal"
+                android:text="@string/signup"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:transitionName="transition_reg_text" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corners"
+            android:elevation="5dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="3dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Gender"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male" />
+
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Female" />
+
+
+                <RadioButton
+                    android:id="@+id/others"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Other" />
+            </RadioGroup>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/black" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Your Birth Date"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+
+            <DatePicker
+                android:id="@+id/age_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:spinnersShown="true" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/next_reg"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="RegisterUser"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="@string/next_btn"
+            android:textColor="@color/colorAccent"
+            android:transitionName="transition_next_btn"
+            />
+
+        <Button
+            android:id="@+id/login_screen"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="309dp"
+            android:layout_height="33dp"
+            android:background="@color/colorAccent"
+            android:elevation="0dp"
+            android:text="@string/alreadyuser"
+            android:textColor="#220101"
+            android:textSize="12sp"
+            android:transitionName="transition_loguser_btn" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

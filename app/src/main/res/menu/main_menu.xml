@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="@string/home" />
+<!--        <item-->
+<!--            android:id="@+id/nav_chat"-->
+<!--            android:icon="@drawable/chat_icon"-->
+<!--            android:title="@string/chat" />-->
+        <item
+            android:id="@+id/nav_addpost"
+            android:icon="@drawable/add"
+            android:title="@string/addpost" />
+<!--        <item-->
+<!--            android:id="@+id/nav_donate"-->
+<!--            android:icon="@drawable/donate_icon"-->
+<!--            android:title="@string/donate" />-->
+    </group>
+
+    <item android:title="@string/settings">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/username_small_icon"
+                    android:title="@string/profile" />
+                <item
+                    android:id="@+id/nav_login"
+                    android:icon="@drawable/login_icon"
+                    android:title="@string/login" />
+                <item
+                    android:id="@+id/nav_reg"
+                    android:icon="@drawable/reg_icon"
+                    android:title="@string/reg" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/logout_icon"
+                    android:title="@string/logout" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Services">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_location"
+                    android:icon="@drawable/location_icon"
+                    android:title="@string/location" />
+                <item
+                    android:id="@+id/nav_notify"
+                    android:icon="@drawable/notify_icon"
+                    android:title="@string/notify" />
+            </group>
+        </menu>
+    </item>
+</menu>

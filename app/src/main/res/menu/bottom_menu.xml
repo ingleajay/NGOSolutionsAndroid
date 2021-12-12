@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/frag_first"
+        android:icon="@drawable/home_icon"
+        app:cnb_backgroundColor = "@color/colorPrimary"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/frag_ngo_post"
+        android:icon="@drawable/icon_event"
+        app:cnb_backgroundColor = "@color/colorPrimary"
+        app:cnb_textColor="@color/colorPrimary"
+        android:title="Event" />
+    <item
+        android:id="@+id/frag_second"
+        android:icon="@drawable/chat_icon"
+        app:cnb_backgroundColor = "@color/colorPrimary"
+        app:cnb_textColor="@color/colorPrimary"
+        android:title="@string/chat" />
+    <item
+        android:id="@+id/frag_third"
+        android:icon="@drawable/icon_ngo"
+        app:cnb_backgroundColor = "@color/colorPrimary"
+        app:cnb_textColor="@color/colorPrimary"
+        android:title="NGO" />
+    <item
+        android:id="@+id/frag_fourth"
+        android:icon="@drawable/username_small_icon"
+        app:cnb_backgroundColor = "@color/colorPrimary"
+        app:cnb_textColor="@color/colorPrimary"
+        android:title="users" />
+    <item
+        android:id="@+id/frag_notify"
+        android:icon="@drawable/notify_icon"
+        app:cnb_backgroundColor = "@color/colorPrimary"
+        app:cnb_textColor="@color/colorPrimary"
+        android:title="notify" />
+</menu>

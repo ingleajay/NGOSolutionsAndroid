@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GooglePay.GooglePay_ngo">
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/pass_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="60dp"
+            android:text="Donate"
+            android:textSize="26dp"
+            android:textColor="@color/colorAccent"
+            android:layout_centerVertical="true"
+            android:id="@+id/set_text"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="643dp"
+        android:layout_below="@+id/bar"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/logo_image1"
+                android:layout_width="match_parent"
+                android:layout_height="116dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/googlepay"
+                android:transitionName="transition_reg_image" />
+
+
+            <TextView
+                android:id="@+id/slogan_name"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_below="@+id/logo_image1"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="Donate to your selected NGO "
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:transitionName="transition_reg_text" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Gpay_user"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="Name"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/colorPrimary"
+                app:hintTextColor="@color/colorPrimary"
+                app:startIconDrawable="@drawable/username_small_icon">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@null" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Gpay_upi_id"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="Upi Id"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/colorPrimary"
+                app:hintTextColor="@color/colorPrimary"
+                app:startIconDrawable="@drawable/login_icon">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@null" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Gpay_amount"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="Amount"
+                android:textColorHint="@color/black"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/colorPrimary"
+                app:hintTextColor="@color/colorPrimary"
+                app:startIconDrawable="@drawable/icon_rupay">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@null" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Gpay_transaction_note"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="Transaction Note"
+                android:textColorHint="@color/black"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconTint="@color/colorPrimary"
+                app:hintTextColor="@color/colorPrimary"
+                app:startIconDrawable="@drawable/icon_note">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@null" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/pay"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Pay Now"
+                android:textColor="@color/colorAccent"
+                android:transitionName="transition_next_btn" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="24sp"
+                tools:text="Status of Transaction" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

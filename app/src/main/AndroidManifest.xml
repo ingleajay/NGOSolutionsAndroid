@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ngosolutions">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.type.watch" />
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".GoogleMap.Nearby_Ngo"></activity>
+        <activity android:name=".GoogleMap.TrackLocation" />
+        <activity android:name=".GoogleMap.Google_Map" />
+        <activity android:name=".GooglePay.GooglePay_ngo" />
+        <activity
+            android:name=".LoginActivity.PopUp"
+            android:label="@string/title_activity_pop_up" /> <!-- <uses-library -->
+        <!-- android:name="com.google.android.wearable" -->
+        <!-- android:required="true" /> -->
+        <!-- &lt;!&ndash; -->
+        <!-- Set to true if your app is Standalone, that is, it does not require the handheld -->
+        <!-- app to run. -->
+        <!-- &ndash;&gt; -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.wearable.standalone" -->
+        <!-- android:value="true" /> -->
+        <activity android:name=".AddPost.PostLikedByActivity" />
+        <activity android:name=".ChatPlatform.ChatActivity" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".AddPost.PostComment" />
+        <activity android:name=".AddPost.ThereProfile" />
+        <activity android:name=".AddPost.PostAdd">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity> <!-- <activity android:name=".LoginActivity.UserDashClass"></activity> -->
+        <activity android:name=".LoginActivity.ForgotPassOutsideClass" />
+        <activity android:name=".LoginActivity.MainScreenClass" />
+        <activity android:name=".LoginActivity.SignUpSucessClass" />
+        <activity android:name=".LoginActivity.ForgotPassSucessClass" />
+        <activity android:name=".LoginActivity.ForgotPassClass" />
+        <activity android:name=".LoginActivity.OTP_VerifyClass" />
+        <activity android:name=".LoginActivity.SignupClass3rd" />
+        <activity android:name=".LoginActivity.SignupClass2nd" />
+        <activity
+            android:name=".LoginActivity.ProfileClass"
+            android:parentActivityName=".HomesScreen" />
+        <activity android:name=".LoginActivity.SignupClass" />
+        <activity android:name=".LoginActivity.SigninClass" />
+        <activity android:name=".HomesScreen" />
+        <activity android:name=".OnBoard" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.ngosolutions.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/paths" />
+        </provider>
+
+        <service
+            android:name=".notifications.FirebaseMessaging"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

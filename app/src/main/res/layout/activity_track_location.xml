@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/google_maps"
+    android:layout_height="match_parent"
+    tools:context=".GoogleMap.TrackLocation">
+    <RelativeLayout
+        android:id="@+id/track"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/pass_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="60dp"
+            android:text="Track Location"
+            android:textSize="26dp"
+            android:textColor="@color/colorAccent"
+            android:layout_centerVertical="true"
+            android:id="@+id/set_text"/>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_track"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/track"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="476dp"
+        android:layout_marginEnd="71dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Track Location"
+        android:textColor="@color/colorAccent" />
+
+    <!--    <Button-->
+<!--        android:id="@+id/btn_near_by"-->
+<!--        style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--        android:layout_width="264dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/btn_track"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="72dp"-->
+<!--        android:layout_marginTop="3dp"-->
+<!--        android:layout_marginEnd="75dp"-->
+<!--        android:backgroundTint="@color/colorPrimary"-->
+<!--        android:text="Search Near By NGO"-->
+<!--        android:textColor="@color/colorAccent" />-->
+</RelativeLayout>

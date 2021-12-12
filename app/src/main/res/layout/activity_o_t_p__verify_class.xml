@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".LoginActivity.OTP_VerifyClass">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <ImageView
+            android:id="@+id/login_screen_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/close_icon"
+            android:tint="@color/black"
+            android:contentDescription="@string/reg" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="257dp"
+            android:layout_gravity="center"
+            android:includeFontPadding="false"
+            android:src="@drawable/security_icon"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="100sp" />
+
+        <TextView
+            android:id="@+id/otp_verification_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:includeFontPadding="false"
+            android:text="@string/otp_verification_text"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/otp_description_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:includeFontPadding="false"
+            android:text="@string/otp_description_text"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+
+        <com.chaos.view.PinView
+            android:id="@+id/pin_view"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:cursorVisible="true"
+            android:inputType="number"
+            android:itemBackground="#65EAEAEA"
+            app:cursorColor="@color/black"
+            app:hideLineWhenFilled="true"
+            app:itemCount="6"
+            app:itemHeight="50dp"
+            app:itemRadius="5dp"
+            app:itemWidth="40dp"
+            app:lineColor="@color/black"
+            app:lineWidth="1dp" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/verify"
+            android:onClick="callNextScreenFromOTP"
+            android:textColor="@color/colorAccent"
+            android:transitionName="transition_OTP_screen"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:id="@+id/signup_screen"
+            android:backgroundTint="@color/colorPrimary"
+            android:elevation="0dp"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

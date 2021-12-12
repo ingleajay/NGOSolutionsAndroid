@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".LoginActivity.ForgotPassOutsideClass">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:id="@+id/pass_back"
+            android:src="@drawable/general_back_icon"
+            android:tint="@color/black" />
+
+
+        <ImageView
+            android:id="@+id/set_new_password_icon"
+            android:layout_width="120dp"
+            android:layout_height="105dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/update_pass_icon" />
+
+
+        <TextView
+            android:id="@+id/set_new_password_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/forgotpass"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:id="@+id/set_new_password_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="@string/forgot_update_desc"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/log_email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="@string/email"
+                app:startIconDrawable="@drawable/email_icon"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:boxStrokeWidthFocused="2dp"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/colorPrimary"
+                app:hintTextColor="@color/colorPrimary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@null"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/set_new_password_btn"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_below="@id/log_email"
+                android:text="@string/forgotemailpass"
+                android:onClick="SendEmail"
+                android:textColor="@color/colorAccent"
+
+                />
+            <Button
+                android:id="@+id/login_screen_forgot"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="327dp"
+                android:layout_height="38dp"
+                android:background="@color/colorAccent"
+                android:elevation="0dp"
+                android:layout_below="@id/set_new_password_btn"
+                android:text="@string/loginuser"
+                android:textColor="#220101"
+                android:textSize="12sp"
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
